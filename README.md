@@ -3,6 +3,9 @@ CodeFellows 301 Portfolio Project
 
 
 
+Icons from:
+http://google.github.io/material-design-icons/
+
 Base user stories copied from the assignment:
 https://github.com/codefellows/seattle-301d7/tree/master/class-01-responsive-mobile-first/portfolio-assignment
 
