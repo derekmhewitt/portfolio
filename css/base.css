@@ -3,46 +3,14 @@ body {
 }
 
 h1 {
+  padding: 1em;
   font-size: 2em;
   font-family: sans-serif;
-  color: blue;
+  color: green;
 }
 
-.responsive_med {
-  display: none;
-}
-
-.responsive_large {
-  display: none;
-}
-
-@media screen and (min-width: 800px) {
-
-  .responsive_small {
-    display: none;
-  }
-  .responsive_med {
-    display: block;
-  }
-
-  .responsive_large {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  
-  .responsive_small {
-    display: none;
-  }
-
-  .responsive_med {
-    display: none;
-  }
-
-  .responsive_large {
-    display: block;
-  }
+.clearfix {
+  clear: both;
 }
 
 header {
