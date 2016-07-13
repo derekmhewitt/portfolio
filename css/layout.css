@@ -6,3 +6,7 @@ img {
 section {
   padding: .5em;
 }
+
+#header_bumper {
+  padding-bottom: .01em;
+}

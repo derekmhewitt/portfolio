@@ -16,7 +16,12 @@
 }
 
 .nav_list li {
-  padding: .5em;
+  color: #bababa;
+  cursor: pointer;
+  border-radius: .5em;
+  background-color: #454545;
+  padding: .5em 1em;
+  margin: .4em;
 }
 @media screen and (min-width: 650px) {
   .nav_list li {
@@ -64,4 +69,17 @@
 
 .template {
   display: none;
+}
+
+.article_header {
+  padding: .5em 1em;
+  border-radius: .5em;
+}
+
+.article_header_inner address {
+  display: inline;
+}
+
+.article_body {
+  color: #363636;
 }

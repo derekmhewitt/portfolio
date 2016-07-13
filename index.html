@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
     <script src="https://use.fontawesome.com/747b239cb1.js"></script>
     <title>Derek Hewitt's Portfolio</title>
   </head>
@@ -22,7 +23,7 @@
           <a href="http://www.linkedin.com/in/derek-hewitt-3a794a101"><li>LinkedIn</li></a>
           <a href="http://github.com/derekmhewitt"><li>Github</li></a>
         </ul>
-        <div class="clearfix"></div>
+        <div class="clearfix" id="header_bumper"></div>
       </nav>
     </header>
     <main>
@@ -35,15 +36,18 @@
       </section>
       <section id="articles">
         <article class="template" data-category="">
-          <header>
+          <header class="article_header">
             <h2>Title</h2>
-            <p> By <address></address> published <time pubdate>Publish Time</time></p>
+              <div class="article_header_inner">
+                <span>By <address></address> published <time pubdate>Publish Time</time></span>
+              </div>
           </header>
-          <section class="article-body"></section>
+          <section class="article_body"></section>
         </article>
       </section>
     </main>
     <footer>
+      <p>Copyright (c) 2016 Derek Hewitt, All Rights Reserved.</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/sourceData.js"></script>ß
