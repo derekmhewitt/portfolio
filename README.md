@@ -1,7 +1,11 @@
 # portfolio
 CodeFellows 301 Portfolio Project
 
+Fonts from:
+https://fonts.google.com/?selection.family=Oswald|Raleway
 
+Article import code structure from:
+https://github.com/codefellows-seattle-301d9/02-jquery-and-the-dom
 
 Icons from:
 http://fontawesome.io/get-started/

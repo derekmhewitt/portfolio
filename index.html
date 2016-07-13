@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initidal-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="resources/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/modules.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
     <script src="https://use.fontawesome.com/747b239cb1.js"></script>
     <title>Derek Hewitt's Portfolio</title>
   </head>
@@ -22,7 +23,7 @@
           <a href="http://www.linkedin.com/in/derek-hewitt-3a794a101"><li>LinkedIn</li></a>
           <a href="http://github.com/derekmhewitt"><li>Github</li></a>
         </ul>
-        <div class="clearfix"></div>
+        <div class="clearfix" id="header_bumper"></div>
       </nav>
     </header>
     <main>
@@ -32,18 +33,24 @@
           <img class="responsive_med" src="https://placekitten.com/500/300">
           <img class="responsive_large" src="https://placekitten.com/800/500">
         </article>
-        <article>
-          <h2>Here lies a project's title.</h2>
-          <p>This is some information about the project. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-        <article>
-          <h2>Here is another project title.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section id="articles">
+        <article class="template" data-category="">
+          <header class="article_header">
+            <h2>Title</h2>
+              <div class="article_header_inner">
+                <span>By <address></address> published <time pubdate>Publish Time</time></span>
+              </div>
+          </header>
+          <section class="article_body"></section>
         </article>
       </section>
     </main>
     <footer>
+      <p>Copyright (c) 2016 Derek Hewitt, All Rights Reserved.</p>
     </footer>
-    <script src="js/stript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/sourceData.js"></script>ß
+    <script src="js/app.js"></script>
   </body>
 </html>

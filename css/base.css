@@ -1,12 +1,17 @@
 body {
-  background-color: #777;
+  background-color: #c2c2c2;
+  min-width: 400px;
+  font-family: 'Raleway', sans-serif;
+  color: #bababa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
 }
 
 h1 {
   padding: 1em;
   font-size: 2em;
-  font-family: sans-serif;
-  color: green;
 }
 
 .clearfix {
@@ -14,9 +19,15 @@ h1 {
 }
 
 header {
-  background-color: #444;
+  background-color: #363636;
+}
+
+a {
+  text-decoration: none;
 }
 
 footer {
-  background-color: #444;
+  background-color: #363636;
+  padding: 1em;
+  text-align: center;
 }
