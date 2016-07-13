@@ -4,7 +4,6 @@ As an employer, I want the portfolio site I visit to convey meaningful informati
 
 As a user, I want the portfolio site I visit to have a clean, modern design free of popups, notifications and any other unnecessary annoyances.  
 
-
 Base user stories from the assignment:
 
 As a developer, I need my site to use valid and semantic markup, so that employers will love me.
