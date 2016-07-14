@@ -32,5 +32,7 @@ sourceData.forEach(function(arrayPosition){
 });
 
 constructedArticles.forEach(function(argh) {
-  $('#articles').append(argh.createArticleHtml());
+  if(argh.category === 'article') {
+    $('#articles').append(argh.createArticleHtml());
+  }
 });
