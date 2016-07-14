@@ -33,4 +33,7 @@ sourceData.forEach(function(arrayPosition){
 
 constructedArticles.forEach(function(argh) {
   $('#articles').append(argh.createArticleHtml());
+  if($(this).data('category') !== 'article') {
+    $(this).hide();
+  }
 });

@@ -71,6 +71,10 @@
   display: none;
 }
 
+#about_me {
+  display: none;
+}
+
 .article_header {
   padding: .5em 1em;
   border-radius: .5em;
