@@ -1,6 +1,10 @@
 # portfolio
 CodeFellows 301 Portfolio Project
 
+Font scaling help from:
+http://www.modularscale.com/
+http://type-scale.com/
+
 Fonts from:
 https://fonts.google.com/?selection.family=Oswald|Raleway
 
