@@ -1,8 +1,12 @@
 var indexPageUtil = {};
 
+$('.hamburger_menu').on('click', function() {
+  // hamburger-menu change icon to x
+  $('.nav_list').toggle();
+});
+
 indexPageUtil.navListFilter = function(event) {
   $('.nav_tab').on('click', function() {
-    console.log($('#articles', '#about_me'));
     $('#articles').hide();
     $('#about_me').hide();
     var $x = '#' + $(this).data('category');
