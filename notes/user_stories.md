@@ -1,4 +1,19 @@
 
+Day 6
+------
+User Stories: MVP
+As a developer, I want to store my project data in a .json file, so that I can keep it organized.
+As a developer, I want to retrieve that source data file asynchronously, so that my app logic gets the data just when I need it.
+
+User Stories: Stretch Goals
+As a reader, I only want to have to fetch data when it's updated (and keep it cached locally), so that I don't make unneeded AJAX calls.
+
+
+Day 5
+------
+
+Partner code review.
+
 Day 4
 ------
 
