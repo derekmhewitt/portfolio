@@ -3,9 +3,10 @@
 var constructedArticles = [];
 
 function ArticleConstructor(args) {
-  var key;
-  for(key in args) this[key] = args[key];
+  for(var key in args) this[key] = args[key];
 }
+
+ArticleConstructor.all = [];
 
 ArticleConstructor.prototype.createArticleHtml = function() {
   var source = $('#source_data_template').html();
@@ -15,17 +16,24 @@ ArticleConstructor.prototype.createArticleHtml = function() {
   return template(this);
 };
 
-sourceData.sort(function(a, b) {
-  return (new Date(b.datePublished)) - (new Date(a.datePublished));
-});
+ArticleConstructor.loadInData = function(data) {
+  data.sort(function(a,b) {
+    return (new Date(b.datePublished)) - (new Date(a.datePublished));
+  }).forEach(function(element) {
+    ArticleConstructor.all.push(new ArticleConstructor(element));
+  });
+  ArticleConstructor.all.forEach(function(argh) {
+    $('#articles').append(argh.createArticleHtml());
+    if($(this).data('category') !== 'article') {
+      $(this).hide();
+    }
+  });
+};
 
-sourceData.forEach(function(arrayPosition){
-  constructedArticles.push(new ArticleConstructor(arrayPosition));
-});
-
-constructedArticles.forEach(function(argh) {
-  $('#articles').append(argh.createArticleHtml());
-  if($(this).data('category') !== 'article') {
-    $(this).hide();
-  }
-});
+ArticleConstructor.fetchData = function() {
+  $.getJSON('../data/sourceData.json', function(data) {
+    ArticleConstructor.loadInData(data);
+    indexPageUtil.navListFilter();
+    indexPageUtil.setupTeasers();
+  });
+};

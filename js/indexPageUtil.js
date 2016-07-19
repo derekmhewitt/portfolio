@@ -1,8 +1,16 @@
 var indexPageUtil = {};
 
+//.nav_list and add class hidden to it if window size is less than first media query
+
+$(window).on('resize', function() {
+  if($(this).width() < 650) {
+    $('.nav_list').addClass('hidden');
+  }
+});
+
 $('.hamburger_menu').on('click', function() {
-  // hamburger-menu change icon to x
-  $('.nav_list').toggle();
+  // hamburger-menu will change icon to x when open
+  $('.nav_list').toggleClass('hidden');
 });
 
 indexPageUtil.navListFilter = function(event) {
@@ -32,5 +40,4 @@ indexPageUtil.setupTeasers = function() {
   });
 };
 
-indexPageUtil.navListFilter();
-indexPageUtil.setupTeasers();
+ArticleConstructor.fetchData();
