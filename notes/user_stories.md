@@ -1,4 +1,15 @@
 
+Day 7
+------
+Technical Requirements
+
+ Use of at least one .map() method.
+ Use of at least one .reduce() method.
+ IIFE present on at least one .js file.
+
+These can be in a side file and not be merged into master.
+
+
 Day 6
 ------
 User Stories: MVP
