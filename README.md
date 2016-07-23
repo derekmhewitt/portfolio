@@ -1,6 +1,8 @@
 # portfolio
 CodeFellows 301 Portfolio Project
 
+This is a change to make a pull request for class 9 refactor possible.  Woo~
+
 Font scaling help from:
 http://www.modularscale.com/
 http://type-scale.com/
