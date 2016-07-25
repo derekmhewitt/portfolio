@@ -30,8 +30,8 @@
   padding: .5em 1em;
   margin: .4em;
 }
-@media screen and (min-width: 650px) {
-
+@media screen and (min-width: 550px) {
+  /*Changed from 650 to 550px to eliminate unnecessary white space*/
   #hamburger_menu {
     display: none;
   }
@@ -58,8 +58,8 @@
 }
 
 }
-@media screen and (min-width: 800px) {
-
+@media screen and (min-width: 750px) {
+  /*changed the min-width from 800 to 750 to make current image more attractive on Ipad*/
   .responsive_small {
     display: none;
   }
