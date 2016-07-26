@@ -34,7 +34,7 @@
   ArticleConstructor.fetchData = function() {
     $.getJSON('../data/sourceData.json', function(data) {
       ArticleConstructor.loadInData(data);
-      indexPageUtil.navListFilter();
+      // indexPageUtil.navListFilter();
       indexPageUtil.setupTeasers();
     });
   };

@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Derek's Portfolio Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekmhewitt/portfolio.git"
+  },
+  "author": "derekmhewitt@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekmhewitt/portfolio/issues"
+  },
+  "homepage": "https://github.com/derekmhewitt/portfolio#readme",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5",
+    "jquery": "^3.1.0",
+    "page": "^1.7.1"
+  }
+}

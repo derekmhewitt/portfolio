@@ -11,14 +11,14 @@
     $('.nav_list').toggleClass('hidden');
   });
 
-  indexPageUtil.navListFilter = function(event) {
-    $('.nav_tab').on('click', function() {
-      $('#articles').hide();
-      $('#about_me').hide();
-      var $x = '#' + $(this).data('category');
-      $('' + $x).show('slow');
-    });
-  };
+  // indexPageUtil.navListFilter = function(event) {
+  //   $('.nav_tab').on('click', function() {
+  //     $('#articles').hide();
+  //     $('#about_me').hide();
+  //     var $x = '#' + $(this).data('category');
+  //     $('' + $x).show('slow');
+  //   });
+  // };
 
   indexPageUtil.setupTeasers = function() {
     $('.article_body *:nth-of-type(n+2)').hide();
