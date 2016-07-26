@@ -1,7 +1,9 @@
 # portfolio
 CodeFellows 301 Portfolio Project
 
-This is a change to make a pull request for class 9 refactor possible.  Woo~
+Class 11 major portfolio refactor to more closely match mvc principles.  Server.js file content copied from lab 11's server.js file.  File structure and organization is closely following class 11's lab as well.  
+
+ArticleConstructor refactoring structure from lab 8's article.js file.  
 
 Font scaling help from:
 http://www.modularscale.com/
