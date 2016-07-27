@@ -4,7 +4,7 @@
 
   aboutControl.reveal = function() {
     $('.hiderClass').hide();
-    $('#about_me').show();
+    $('#about_me').fadeIn();
   };
   module.aboutControl = aboutControl;
 })(window);

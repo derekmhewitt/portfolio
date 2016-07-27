@@ -93,7 +93,7 @@
 
 }
 
-#about_me {
+#about_me, #portfolio {
   display: none;
 }
 
@@ -102,10 +102,31 @@
   border-radius: .5em;
 }
 
+.article_header a, a:link, a:visited {
+ text-decoration: none;
+ color: #c2c2c2;
+}
+
 .article_header_inner address {
   display: inline;
 }
 
 .article_body {
   color: #363636;
+}
+
+.read_on, .show_less {
+  color: #363636;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+#portfolio_repos li {
+  color: #363636;
+}
+
+.repo_name {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border-radius: .5em;
 }
