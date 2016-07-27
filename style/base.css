@@ -47,8 +47,8 @@ header {
   background-color: #363636;
 }
 
-a {
-  text-decoration: none;
+a, a:link, a:visited {
+ text-decoration: none;
 }
 
 footer {

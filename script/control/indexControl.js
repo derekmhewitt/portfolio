@@ -4,7 +4,7 @@
 
   indexControl.reveal = function() {
     $('.hiderClass').hide();
-    $('#articles').show();
+    $('#articles').fadeIn();
   };
   module.indexControl = indexControl;
 })(window);

@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/747b239cb1.js"></script>
     <link rel="stylesheet" href="vendor/style/reset.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/layout.css">
     <link rel="stylesheet" href="style/modules.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
-    <script src="https://use.fontawesome.com/747b239cb1.js"></script>
     <title>Derek Hewitt's Portfolio</title>
     <script id="source_data_template" type="text/x-handlebars-template">
       <article class="clearfix" data-author="{{author}}" data-catgory="{{category}}">
         <header class="article_header">
           <h2>{{title}}</h2>
           <div class="article_header_inner">
-            By <address><a href="{{authorUrl}}">{{author}}</a></address>{{publishStatus}}
+            By <address><a href="{{authorUrl}}">{{author}}</a></address> {{publishStatus}}
           </div>
         </header>
         <section class="article_body">{{{body}}}</section>
@@ -24,7 +24,9 @@
     </script>
     <script id="repo_template" type="text/x-handlebars-template">
       <li>
-        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <header class="repo_name">
+          <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        </header>
         <p>Description: {{description}}</p>
         <p>Primary Language: {{language}}</p>
         <p>Created: {{created_at}}</p>
@@ -65,9 +67,9 @@
       <section id="portfolio" class="hiderClass">
         <header class="article_header">
           <h2>These are my github repos!</h2>
-          <ul id="portfolio_repos">
-          </ul>
         </header>
+        <ul id="portfolio_repos">
+        </ul>
       </section>
       <section id="about_me" class="hiderClass">
         <article class="" data-category="">
@@ -89,6 +91,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <!-- Model Script -->
+    <script src="/script/githubToken.js"></script>
     <script src="/script/sourceData.js"></script>
     <script src="/script/model/aboutModel.js"></script>
     <script src="/script/model/indexModel.js"></script>

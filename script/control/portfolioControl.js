@@ -4,7 +4,7 @@
 
   portfolioControl.reveal = function() {
     $('.hiderClass').hide();
-    $('#portfolio').show();
+    $('#portfolio').fadeIn();
   };
 
   module.portfolioControl = portfolioControl;
